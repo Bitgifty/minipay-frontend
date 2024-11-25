@@ -1,197 +1,104 @@
-<!-- TITLE -->
-<p align="center"> 
-  <img width="100px" src="https://github.com/celo-org/celo-composer/blob/main/images/readme/celo_isotype.svg" align="center" alt="Celo" />
- <h2 align="center">Celo Composer</h2>
- <p align="center">Build, deploy, and iterate quickly on decentralized applications using Celo.</p>
-</p>
-  <p align="center">
-    <a href="https://github.com/celo-org/celo-composer/graphs/stars">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/stars/celo-org/celo-composer?color=FCFF52" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/graphs/contributors">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://opensource.org/license/mit/">
-      <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-    </a>
-  </p>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minipay Frontend README</title>
+</head>
+<body>
+    <h1> BitGifty Minipay Frontend</h1>
+    <p>
+        Minipay Frontend is a web-based interface for Minipay, a decentralized platform designed to enable seamless and affordable digital transactions, particularly leveraging the Celo blockchain. This repository contains the source code for the user-facing part of the Minipay application.
+    </p>
 
-<!-- TABLE OF CONTENTS -->
+    <h2>Features</h2>
+    <ul>
+        <li><strong>User-Friendly Interface</strong>: A simple, intuitive interface designed for seamless transactions.</li>
+        <li><strong>Blockchain Integration</strong>: Built on the Celo blockchain to provide decentralized and secure transaction processing.</li>
+        <li><strong>Cross-Border Payments</strong>: Enables affordable international payments using stablecoins like cUSD.</li>
+        <li><strong>Gasless Transactions</strong>: Supports transactions without requiring users to hold gas tokens.</li>
+    </ul>
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+    <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>React.js</strong>: Frontend framework.</li>
+        <li><strong>TypeScript</strong>: Strongly typed language for building scalable applications.</li>
+        <li><strong>Celo SDK</strong>: For blockchain interactions.</li>
+        <li><strong>Styled Components</strong>: For managing styles.</li>
+    </ul>
 
-<!-- ABOUT THE PROJECT -->
+    <h2>Prerequisites</h2>
+    <ul>
+        <li><strong>Node.js</strong>: Version 16+ is recommended.</li>
+        <li><strong>npm</strong> or <strong>yarn</strong>: Package manager.</li>
+        <li>Access to a Celo blockchain network.</li>
+    </ul>
 
-## About The Project
+    <h2>Getting Started</h2>
 
-Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of frameworks, examples, and Celo specific functionality to help you get started with your next dApp.
+    <h3>Clone the Repository</h3>
+    <pre>
+        <code>
+git clone https://github.com/Bitgifty/minipay-frontend.git
+cd minipay-frontend
+        </code>
+    </pre>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+    <h3>Install Dependencies</h3>
+    <pre>
+        <code>
+npm install
+# or
+yarn install
+        </code>
+    </pre>
 
-## Built With
+    <h3>Configuration</h3>
+    <ol>
+        <li>Create a <code>.env</code> file in the root directory.</li>
+        <li>Add the following variables:
+            <pre>
+                <code>
+REACT_APP_CELO_NETWORK=&lt;Celo Network URL&gt;
+REACT_APP_API_KEY=&lt;Your API Key&gt;
+                </code>
+            </pre>
+        </li>
+    </ol>
 
-Celo Composer is built on Celo to make it simple to build dApps using a variety of front-end frameworks, and libraries.
+    <h3>Run the Application</h3>
+    <pre>
+        <code>
+npm start
+# or
+yarn start
+        </code>
+    </pre>
+    <p>Visit <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your browser to view the app.</p>
 
-- [Celo](https://celo.org/)
-- [Solidity](https://docs.soliditylang.org/en/v0.8.19/)
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Material UI](https://mui.com/)
-- [React Native](https://reactnative.dev/)
-- [Flutter](https://docs.flutter.dev/)
-- [React-celo](https://github.com/celo-org/react-celo/)
-- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo)
+    <h2>Deployment</h2>
+    <p>
+        The project is set up for deployment using <strong>Vercel</strong> or any other hosting service. Ensure the environment variables are configured in your deployment platform.
+    </p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+    <h2>Contribution</h2>
+    <p>We welcome contributions to improve Minipay Frontend! Follow these steps:</p>
+    <ol>
+        <li>Fork the repository.</li>
+        <li>Create a feature branch: <code>git checkout -b feature-name</code>.</li>
+        <li>Commit your changes: <code>git commit -m "Add feature"</code>.</li>
+        <li>Push to the branch: <code>git push origin feature-name</code>.</li>
+        <li>Open a Pull Request.</li>
+    </ol>
 
-<!-- GETTING STARTED -->
+    <h2>License</h2>
+    <p>
+        This project is licensed under the <a href="LICENSE">MIT License</a>.
+    </p>
 
-## Prerequisites
-
-- Node
-- Git (v2.38 or higher)
-
-## How to use Celo Composer
-
-The easiest way to start with Celo Composer is using `@celo/celo-composer`. This CLI tool lets you quickly start building dApps on Celo for multiple frameworks, including React (with either react-celo or rainbowkit-celo), React Native (w/o Expo), Flutter, and Angular. To get started, just run the following command, and follow the steps:
-
-```bash
-npx @celo/celo-composer@latest create
-```
-
-### Front-end framework
-
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
-
-### Web3 library (for react-app)
-
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_2.png?raw=true)
-
-### Smart contract framework
-
-![Celo Composer tool selection](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_3.png?raw=true)
-
-### Subgraph
-
-![Celo Composer subgraph support](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_4.png?raw=true)
-
-### Name your dApp
-
-![Celo Composer dApp name](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_5.png?raw=true)
-
-**_🔥Voila, you have a dApp ready to go. Voila, you have a dApp ready to go. Start building your dApp on Celo._**
-
-### Getting started
-
-Once your custom dApp has been created, just install dependencies, either with `yarn` or `npm i`, and run the respective script from the `package.json` file.
-## Supported Frameworks
-
-### React
-
-- Support for Website and Progressive Web Application.
-- Works with all major crypto wallets.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-app/README.md) to learn more about.
-
-### React Native
-
-- Out of the box config, just focus on buidl.
-- Support for Android and IOS.
-- Works with and without [Expo](https://expo.dev/).
-- Working example app included.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-native-app/README.md) to learn more about.
-
-### Flutter
-
-- One command to get started - Type `flutter run` to start development in your mobile phone.
-- Works with all major mobile crypto wallets.
-- Support for Android, IOS (Web, Windows, and Linux coming soon).
-- Working example app included.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/flutter-app/README.md) to learn more about.
-
-### Angular
-
-- Support for Website and Progressive Web Application.
-- Works with all major crypto wallets.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/angular-app/README.md) to learn more about.
-
-<!-- USAGE EXAMPLES -->
-
-## 🔭 Learning Solidity
-
-📕 Read the docs: <https://docs.soliditylang.org>
-
-- [Primitive Data Types](https://solidity-by-example.org/primitives/)
-- [Mappings](https://solidity-by-example.org/mapping/)
-- [Structs](https://solidity-by-example.org/structs/)
-- [Modifiers](https://solidity-by-example.org/function-modifier/)
-- [Events](https://solidity-by-example.org/events/)
-- [Inheritance](https://solidity-by-example.org/inheritance/)
-- [Payable](https://solidity-by-example.org/payable/)
-- [Fallback](https://solidity-by-example.org/fallback/)
-
-📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.8.19/units-and-global-variables.html)
-
-## Support
-
-Join the Celo Discord server at <https://chat.celo.org>. Reach out on the dedicated repo channel [here](https://discord.com/channels/600834479145353243/941003424298856448).
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues](https://github.com/celo-org/celo-composer/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-We welcome contributions from the community.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<!-- CONTACT -->
-## Contact
-
-- [@CeloDevs](https://twitter.com/CeloDevs)
-- [Discord](https://discord.com/invite/celo)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+    <h2>Support</h2>
+    <p>
+        For inquiries, please open an issue on the repository or contact us at <a href="mailto:support@minipay.com">support@minipay.com</a>.
+    </p>
+</body>
+</html>
