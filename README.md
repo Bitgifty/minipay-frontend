@@ -43,6 +43,40 @@ Commit your changes: git commit -m "Add feature".
 Push to the branch: git push origin feature-name.
 Open a Pull Request.
 
+
+# Repository Navigation
+
+### Access the Repository
+The repository is open source and can be accessed at Minipay Frontend GitHub Repository.
+
+### Navigate to the Source Folder
+- On the repository page, click on the Code tab in the navigation bar.
+- Locate and open the packages/react-app/components/utility folder.
+
+### Explore Component Folders
+- Airtime and Data Folders: Contain Airtime.jsx and Data.jsx, which include Kenyan airtime and data network providers.
+- Buy Goods and Paybills Folders: Unique to Kenyan users.
+
+### Paybill Component
+Located in the Paybills folder, it contains:
+
+- PayBillForm: Includes the payBill function, which deducts from the user's wallet and sends the following parameters to the backend:
+wallet_from: User's preferred crypto wallet.
+transaction_hash: Hash of the transaction.
+paybill_number: Mpesa sort code of the service to be credited.
+account_number: User's unique account number for the service.
+amount: Amount to be sent in KES.
+
+### Buy Goods Component
+Located in the BuyGoods folder, it contains:
+
+- BuyGoodsForm: Includes the buyGood function, which deducts from the user's wallet and sends the following parameters to the backend:
+wallet_from: User's preferred crypto wallet.
+transaction_hash: Hash of the transaction.
+till_number: Mpesa sort code of the business to be credited.
+amount: Amount to be sent in KES.
+
+
 ## License
 This project is licensed under the MIT License.
 
